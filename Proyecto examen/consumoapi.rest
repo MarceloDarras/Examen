@@ -1,0 +1,6 @@
+GET https://api.bsale.cl/v1/coins.json HTTP/1.1
+content-type: application/json
+
+{
+  
+}

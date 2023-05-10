@@ -242,6 +242,7 @@ body{
     transition: 0.3s ease all;
 }
 
+
 body.dark {
     background: #111111;
 }
@@ -302,4 +303,88 @@ body.dark .container {
 body.dark .container .reloj p{
     color: #f1f1f1;
 }
+
+body.dark nav{
+    background: darkblue;
+    transition: 0.3s ease all;
+}
+
+nav #btnCarrito{
+    color: black;
+    transition: 0.3s ease all;
+}
+
+body.dark nav #btnCarrito{
+    color: #f1f1f1;
+    transition: 0.3s ease all;
+}
+
+body.dark .footer{
+    background: #666;
+    transition: 0.3s ease all;
+}
+
+.card{
+    background: white;
+    transition: 0.3s ease all;
+}
+
+body.dark .card{
+    background: grey;
+    transition: 0.3s ease all;
+}
+
+body.dark .encabezado{
+    color: #f1f1f1;
+}
+
+body.dark .contenedor-items{
+    max-width: 1200px;
+    background: #666;
+}
+
+body.dark .title{
+    color: #f1f1f1;
+}
+
+body.dark #btn-registro{
+    background-image: linear-gradient(to right, #dac723, #dac723, #dac723);
+    transition: 0.3s ease all;
+}
+body.dark #btn-inicio{
+    background-image: linear-gradient(to right, #dac723, #dac723, #dac723);
+    transition: 0.3s ease all;
+}
+body.dark #btn-elimina{
+    background-image: linear-gradient(to right, #dac723, #dac723, #dac723);
+    transition: 0.3s ease all;
+}
+body.dark #btn-agrega{
+    background-image: linear-gradient(to right, #dac723, #dac723, #dac723);
+    transition: 0.3s ease all;
+}
+
+body.dark .tcuenta{
+    color: #f1f1f1;
+}
+
+body.dark .ocontraseña{
+    color: #f1f1f1;
+}
+
+
+body.dark h2{
+    color: #f1f1f1;
+}
+
+body.dark a{
+    color: #f1f1f1;
+}
+
+
+
+
+
+
+
 

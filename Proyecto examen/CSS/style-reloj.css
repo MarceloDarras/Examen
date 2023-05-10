@@ -24,16 +24,12 @@ p{
     border-color: grey;
     text-align: end;
     position: relative;
-    margin-top: 10%;
-    margin-left: 50%;
+    margin-top: 5%;
+    margin-left: 44%;
     left: 50%;
-    top: 70%;
+    top: 10%;
     transform: translate(-50%, -50%);
     text-shadow: 0 0 20px rgb(230, 171, 10), 0, 0 20px rgb(255, 255, 221);
-}
-.fecha{
-    letter-spacing: 0.lem;
-    font-size: 24px;
 }
 .tiempo{
     letter-spacing: 0.lem;

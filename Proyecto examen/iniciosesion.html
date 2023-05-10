@@ -5,9 +5,18 @@
 	<link rel="stylesheet" type="text/css" href="css/style-iniciosesion.css">
 	<link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/a81368914c.js"></script>
+	<link rel="stylesheet" href="CSS/style.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
+	<button class="switch" id="switch">
+		<span>
+		  <i class="fas fa-sun"></i>
+		</span>
+		<span>
+		  <i class="fas fa-moon"></i>
+		</span>
+	  </button>
 	<img class="wave" src="img/wave.png">
 	<div class="container">
 		<div class="img">
@@ -36,11 +45,12 @@
             	   </div>
             	</div>
             	<a class="ocontraseña" href="#">¿Olvido su contraseña?</a>
-            	<input type="submit" class="btn" value="Iniciar Sesión">
+            	<input type="submit" id="btn-inicio" class="btn" value="Iniciar Sesión">
 				<a class="tcuenta" href="registro.html" >¿Necesitas tiene una cuenta?</a>
             </form>
         </div>
     </div>
     <script type="text/javascript" src="js/main.js"></script>
+	<script src="JS/funciones-estetica.js"></script>
 </body>
 </html>
