@@ -52,10 +52,10 @@
           </li>
           <li class="nav-item">
             <select id="divisa" class="custom-select">
-              <option value="1">Peso</option>
-              <option onselect="convertirDolar()" value="2">Dolar</option>
+              <option id="option1" class="option" value="1">Peso</option>
+              <option id="option2" class="option" value="2">Dolar</option>
             </select>
-            <button onclick="consumoApi()" class="btn btn-primary">Cambiar</button>
+            <button onclick="cambioMoneda()" class="btn btn-primary">Cambiar</button>
           </li>
             
         </ul> 
@@ -139,7 +139,8 @@
             <div class="item">
               <span id="titulo" class="titulo-item">Bandana Escocesa</span>
               <img src="//cdn.shopify.com/s/files/1/1741/2603/products/bandanaescocesa_300x.jpg?v=1610573718" alt="" class="img-item">
-              <span id="precio" class="precio-item">$</span>
+              <span id="precio" class="precio-item">$15.000</span>
+              <span id="precioDolar" class="precio-item"></span>
               <button onclick = "crear()" class="boton-item">Agregar al carrito</button>
             </div>
           </div>

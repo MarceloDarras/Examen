@@ -7,28 +7,21 @@ var requestOptions = {
   headers: myHeaders
 };
 
-fetch("https://api.apilayer.com/exchangerates_data/convert?to={JPY}&from={USD}&amount={5}", requestOptions)
-  .then(response => response.text())
-  .then(result => console.log(result))
-  .catch(error => console.log('error', error));
-
-
-
-  if ("geolocation" in navigator) {
-    /* geolocation is available */
-    console.log("Wena wena");
-  } else {
-    /* geolocation IS NOT available */
-    console.log("mala mala");
+function cambioMoneda(){
+  if(document.getElementsByClassName('option').value = 1){
+    console.log("Divisa por defecto");
+  }else if(document.getElementsByClassName('option').value = 2){
+    fetch("https://api.apilayer.com/exchangerates_data/convert?to=USD&from=CLP&amount=15000", requestOptions)
+    .then(response => response.text())
+    .then(result => console.log(result))
+    .catch(error => console.log('error', error));
   }
-  
-  navigator.geolocation.getCurrentPosition((position) => {
-    doSomething(position.coords.latitude, position.coords.longitude);
-  });
+}
 
-  const watchID = navigator.geolocation.watchPosition((position) => {
-    doSomething(position.coords.latitude, position.coords.longitude);
-  });
+
+
+
+
   
   
 

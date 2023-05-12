@@ -16,7 +16,3 @@ $(function(){
     })
 })
 
-let url = "https://api.exchangeratesapi.io/v1/"
-$.get(url, function(respuesta){
-    console.log(respuesta);
-}, "json")
