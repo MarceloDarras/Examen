@@ -17,7 +17,7 @@
     <nav class="py-3 navbar navbar-dark bg-caution navbar-expand-md">
       <div class="container">
         <div class="icon">
-          <a class="navbar-brand" href="">
+          <a class="navbar-brand" href="index.html">
             <img src="img/logo.png" width="75" height="75" alt=""> Kuma! </a>
         </div>
   
@@ -49,6 +49,12 @@
                   <i class="fas fa-moon"></i>
                 </span>
               </button>
+            </li>
+            <li class="nav-item">
+              <select onchange="cambioMoneda()" name="divisa" id="divisa" class="form-select">
+                <option id="option1" class="option" value="1">Peso</option>
+                <option id="option2" class="option" value="2">Dolar</option>
+              </select>
             </li>
               
           </ul> 
@@ -132,7 +138,7 @@
                 <div class="item">
                   <span class="titulo-item">Arnes Acolchado</span>
                   <img src="https://s3.us-east-1.amazonaws.com/laikapp/images_products/75449128_1_33.jpg" alt="" class="img-item">
-                  <span class="precio-item">$25.000</span>
+                  <span data-clp="25000"class="precio-item">25000</span>
                   <button class="boton-item">Agregar al carrito</button>
                 </div>
               </div>
@@ -144,7 +150,7 @@
                 <div class="item">
                   <span class="titulo-item">Arnes Torso Completo</span>
                   <img src="https://laikapp.s3.amazonaws.com/dev_images_products/55566_144316_Zeedog___Ella_Air_Mesh_Harness_1647094403_500x500.jpg" alt="" class="img-item">
-                  <span class="precio-item">$15.000</span>
+                  <span data-clp="15000" class="precio-item">15000</span>
                   <button class="boton-item">Agregar al carrito</button>
                 </div>
               </div>
@@ -156,7 +162,7 @@
                 <div class="item">
                   <span class="titulo-item">Collar Stranger Things</span>
                   <img src="https://laikapp.s3.amazonaws.com/dev_images_products/80453_197969_Zeedog___Collar_Perro_Hawkins_Stranger_Things_1664915906_800x800.jpg" alt="" class="img-item">
-                  <span class="precio-item">$17.000</span>
+                  <span data-clp="17000" class="precio-item">17000</span>
                   <button class="boton-item">Agregar al carrito</button>
                 </div>
               </div>
@@ -169,74 +175,73 @@
       <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.min.js" integrity="sha384-heAjqF+bCxXpCWLa6Zhcp4fu20XoNIA98ecBC1YkdXhszjoejr5y9Q77hIrv8R9i" crossorigin="anonymous"></script>
       <script src="JS/funciones-estetica.js"></script>
+      <script src="JS/api.js"></script>
 </body>
 <footer class="footer">
-    <div class="left-footer">
-      <div class="row">
-  
-        <div class="col-lg-3 col-md-6 col-sm-6">
-          <div class="footer-about">
-            <div class="footer-logo">
-              <a href=""><img src="" width="75" height="75" alt=""></a>
-            </div>
-            <p>
-              Kuma!, Nuestra misión es ayudar a nuestros amigos peludos a encontrar el alimento, juguete o accesorio favorito.</p>
-              <a href=""><img src="" alt=""></a>
-            </div>            
-        </div>
-  
-        <div class="col-lg-2 offset-lg-1 col-md-3 col-sm-6">
-          <div class="footer-widget">
-            <h6>Categorias</h6>
-            <ul>
-              <li><a href="">Higiene</a></li>
-              <li><a href="">Entretención</a></li>
-              <li><a href="">Accesorios y vestuarios</a></li>
-              <li><a href="">Platos y bebederos</a></li>
-            </ul>
+  <div class="left-footer">
+    <div class="row">
+
+      <div class="col-lg-3 col-md-6 col-sm-6">
+        <div class="footer-about">
+          <div class="footer-logo">
+            <a href=""><img src="" width="75" height="75" alt=""></a>
           </div>
-        </div>
-  
-        <div class="col-lg-2 col-md-3 col-sm-6">
-          <div class="footer-widget">
-            <h6>Links</h6>
-            <ul>
-              <li><a href="">Contacta con nosotros</a></li>
-              <li><a href="">Metodos de pago</a></li>
-              <li><a href="">Delivery</a></li>
-              <li><a href="">Reembolsos</a></li>
-            </ul>
-          </div>
-        </div>
-  
-        <div class="col-lg-3 offset-lg-1 col-md-6 col-sm-6">
+          <p>
+            Kuma!, Nuestra misión es ayudar a nuestros amigos peludos a encontrar el alimento, juguete o accesorio favorito.</p>
+            <a href=""><img src="" alt=""></a>
+          </div>            
+      </div>
+
+      <div class="col-lg-2 offset-lg-1 col-md-3 col-sm-6">
         <div class="footer-widget">
-            <h6>NewsLetter</h6>
-            <div class="footer-newsletter">
-              <p>Se el primero en saber sobre nuevos productos, ofertas y promociones!</p>
-              <form action="#">
-                <input type="text" placeholder="Ingrese su mail">
-                <button type="submit"><span><i class="fa fa-envelope" arial-hidden="true"></i></span></button>
-              </form>
-            </div>
-  
-          </div>
-        </div>
-  
-  
-  
-  
-      </div>
-  
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <div class="footer-copyright-text">
-            <p>Copyright &copy; 2023 All rights reserved | Kuma!</p>
-          </div>
+          <h6>Categorias</h6>
+          <ul>
+            <li><a href="">Higiene</a></li>
+            <li><a href="">Entretención</a></li>
+            <li><a href="">Accesorios y vestuarios</a></li>
+          </ul>
         </div>
       </div>
-  
+
+      <div class="col-lg-2 col-md-3 col-sm-6">
+        <div class="footer-widget">
+          <h6>Links</h6>
+          <ul>
+            <li><a href="">Contacta con nosotros</a></li>
+            <li><a href="">Metodos de pago</a></li>
+            <li><a href="">Delivery</a></li>
+            <li><a href="">Reembolsos</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-lg-3 offset-lg-1 col-md-6 col-sm-6">
+      <div class="footer-widget">
+          <h6>¿Eres parte de la familia Kuma!?</h6>
+          <div class="footer-newsletter">
+            <p>Se el primero en saber sobre nuevos productos, ofertas y promociones!</p>
+            <form action="#">
+              <input type="text" placeholder="Ingrese su mail">
+              <a class="button" href="registro.html"><span><i class="fa fa-envelope" arial-hidden="true"></i></span></a>
+              <p class="acominicio">¿Ya eres parte de la familia Kuma!? <a class="iniciosesion" href="iniciosesion.html">Inicia sesión</a></p>
+              <p class="agregar">¡Agrega tus productos! -<a class="iniciosesion" href="agregar_producto.html"> Agregar</a></p>
+              <p class="eliminar">¡Elimina tus productos! -<a class="iniciosesion" href="eliminar_produto.html"> Eliminar<a></p>
+            </form>
+          </div>
+
+        </div>
+      </div>
     </div>
-  
-  </footer>
+
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <div class="footer-copyright-text">
+          <p>Copyright &copy; 2023 All rights reserved | Kuma!</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
 </html>

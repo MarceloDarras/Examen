@@ -44,7 +44,7 @@ body{
 }
 
 form{
-	width: 360px;
+	width: 400px;
 }
 
 .register-content img{
@@ -65,10 +65,7 @@ form{
     margin: 25px 0;
     padding: 5px 0;
     border-bottom: 2px solid #d9d9d9;
-}
-
-.register-content .input-div.one{
-	margin-top: 0;
+	margin-bottom: 4px;
 }
 
 .i{
@@ -98,7 +95,7 @@ form{
 }
 
 .input-div:before, .input-div:after{
-	content: '';
+	content: ' ';
 	position: absolute;
 	bottom: -2px;
 	width: 0%;
@@ -128,7 +125,7 @@ form{
 	color: #FFE92F;
 }
 
-.input-div > div > .form-control.input{
+.input-div > div > input{
 	position: absolute;
 	left: 0;
 	top: 0;
@@ -156,6 +153,19 @@ a{
 	transition: .3s;
 }
 
+.formulario__input-error{
+	display: block;
+	text-align: left;
+	text-decoration: none;
+	color: rgb(206, 22, 22);
+	font-size: 0.9rem;
+	display: none;
+}
+
+.formulario__input-error-activo {
+	display: block;
+}
+
 a:hover{
 	color: #FFE92F;
 }
@@ -170,18 +180,16 @@ a:hover{
 	background-image: linear-gradient(to right, #FFE92F, #FFE113, #FFE92F);
 	background-size: 200%;
 	font-size: 1.2rem;
-	color: #fff;
+	color: #ffffff;
 	font-family: 'Poppins', sans-serif;
 	text-transform: uppercase;
 	margin: 1rem 0;
 	cursor: pointer;
 	transition: .5s;
+
 }
 .btn:hover{
 	background-position: right;
-}
-.error{
-	color: red;
 }
 
 
@@ -222,4 +230,21 @@ a:hover{
 	.register-content{
 		justify-content: center;
 	}
+}
+
+.formulario__grupo-incorrecto ::before{
+	color: rgb(206, 22, 22);
+	opacity: 1;
+}
+
+/*------ Correcto ------*/
+
+.formulario__grupo-correcto ::before{
+	color: #1ed12d;
+	opacity: 1;
+}
+
+.formulario__grupo-correcto .input-div.focus{
+	color: #1ed12d;
+	opacity: 1;
 }

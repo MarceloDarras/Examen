@@ -8,10 +8,10 @@
     <script src="JS/funciones.js" async></script>
     <link rel="stylesheet" href="CSS/Style-footer.css">
     <link rel="stylesheet" href="CSS/Style-header.css">
-    <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="CSS/style-reloj.css">
+    <link rel="stylesheet" href="CSS/style.css">
     <script src="https://kit.fontawesome.com/2bddaf117c.js" crossorigin="anonymous"></script>
-    <title>Kuma shop</title>
+    <title>Los mejores productos para tu mascota | Kuma!</title>
 </head>
 <header>
   <nav class="py-3 navbar navbar-dark bg-caution navbar-expand-md">
@@ -38,8 +38,7 @@
           <li class="nav-item"><a class="nav-link" href="">Entretención</a></li>
           <li class="nav-item"><a class="nav-link" href="">Accesorios y vestuarios</a></li>
           <li class="nav-item"><a class="nav-link" href="">Alimentos</a></li>
-          <li class="nav-item"><a class="nav-link" href="">Platos y bebederos</a></li>
-          <li class="nav-item"><button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"><span id="btnCarrito" class="fa fa-cart-shopping"></span></button>
+          <li class="nav-item"><button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"><span class="fa fa-cart-shopping"></span></button>
           <li class="nav-item">
             <button class="switch" id="switch">
               <span>
@@ -50,6 +49,7 @@
               </span>
             </button>
           </li>
+            
         </ul> 
       </div>
     </div>
@@ -58,12 +58,11 @@
     
 </header>
 <body>
-    <div class="container">
-      <div class="reloj">
-        <p class="tiempo"></p>
-      </div>
+  <div class="container mt-5">
+    <div class="reloj">
+      <p class="tiempo"></p>
     </div>
-
+  </div>
   <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
     <div class="offcanvas-header">
       <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -250,14 +249,15 @@
         </div>
       </div>
     </div>
+    
+    
   </div>
-  <br>
   
   
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.min.js" integrity="sha384-heAjqF+bCxXpCWLa6Zhcp4fu20XoNIA98ecBC1YkdXhszjoejr5y9Q77hIrv8R9i" crossorigin="anonymous"></script>
-    <script src="JS/funciones.js"></script>
     <script src="JS/funciones-estetica.js"></script>
+    
 </body>
 <footer class="footer">
   <div class="left-footer">
@@ -281,12 +281,9 @@
             <li><a href="">Higiene</a></li>
             <li><a href="">Entretención</a></li>
             <li><a href="">Accesorios y vestuarios</a></li>
-            <li><a href="">Platos y bebederos</a></li>
           </ul>
         </div>
       </div>
-
-      
 
       <div class="col-lg-2 col-md-3 col-sm-6">
         <div class="footer-widget">
@@ -301,29 +298,19 @@
       </div>
 
       <div class="col-lg-3 offset-lg-1 col-md-6 col-sm-6">
-        <div class="footer-widget">
-            <h6>¿Eres parte de la familia Kuma!?</h6>
-            <div class="footer-newsletter">
-              <p>Se el primero en saber sobre nuevos productos, ofertas y promociones!</p>
-              <form action="#" class="d-flex flex-column">
-               <div class="box">
-                <input type="text" placeholder="Ingrese su mail">
-                <a class="button" href="registro.html"><span><i class="fa fa-envelope" arial-hidden="true"></i></span></a>
-               </div>
-                <p class="acominicio">¿Ya eres parte de la familia Kuma!? <a class="iniciosesion" href="iniciosesion.html">Inicia sesión</a></p>
-                <p class="acominicio">¡Agrega tus productos! <a class="iniciosesion" href="agregar_producto.html">Click aquí para agregar</a></p>
-                <p class="acominicio">¡Elimina un producto! <a class="iniciosesion" href="eliminar_produto.html">Click aquí para eliminar</a></p>
-              </form>
-            </div>
+      <div class="footer-widget">
+          <h6>¿Eres parte de la familia Kuma!?</h6>
+          <div class="footer-newsletter">
+            <p>Se el primero en saber sobre nuevos productos, ofertas y promociones!</p>
+            <form action="#">
+              <input type="text" placeholder="Ingrese su mail">
+              <a class="button" href="registro.html"><span><i class="fa fa-envelope" arial-hidden="true"></i></span></a>
+              <p class="acominicio">¿Ya eres parte de la familia Kuma!? <a class="iniciosesion" href="iniciosesion.html">Inicia sesión</a></p>
+              <p class="agregar">¡Agrega tus productos! -<a class="iniciosesion" href="agregar_producto.html"> Agregar</a></p>
+              <p class="eliminar">¡Elimina tus productos! -<a class="iniciosesion" href="eliminar_produto.html"> Eliminar<a></p>
+            </form>
           </div>
-        </div>
-      </div>
-    </div>
 
-    <div class="col">
-      <div class="container">
-        <div class="reloj">
-          <p class="tiempo"></p>
         </div>
       </div>
     </div>

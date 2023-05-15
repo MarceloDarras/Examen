@@ -6,18 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!--<script src="JS/funciones.js" async></script> -->
+    <script src="JS/funciones.js" async></script>
     <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/style-reloj.css">
     <link rel="stylesheet" href="CSS/Style-footer.css">
     <link rel="stylesheet" href="CSS/Style-header.css">
-    <link rel="stylesheet" href="CSS/style-reloj.css">
     <title>Document</title>
 </head>
 <header>
   <nav class="py-3 navbar navbar-dark bg-caution navbar-expand-md">
     <div class="container">
       <div class="icon">
-        <a class="navbar-brand" href="">
+        <a class="navbar-brand" href="index.html">
           <img src="img/logo.png" width="75" height="75" alt=""> Kuma! </a>
       </div>
 
@@ -39,23 +39,22 @@
           <li class="nav-item"><a class="nav-link" href="">Accesorios y vestuarios</a></li>
           <li class="nav-item"><a class="nav-link" href="">Alimentos</a></li>
           <li class="nav-item"><a class="nav-link" href="">Platos y bebederos</a></li>
-          <li class="nav-item"><button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"><span id="btnCarrito" class="fa fa-cart-shopping"></span></button>
+          <li class="nav-item"><button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"><span class="fa fa-cart-shopping"></span></button>
           <li class="nav-item">
-            <button class="switch" id="switch">
+             <button class="switch" id="switch">
               <span>
                 <i class="fas fa-sun"></i>
               </span>
               <span>
-                <i class="fas fa-moon"></i>
+                 <i class="fas fa-moon"></i>
               </span>
-            </button>
+             </button>
           </li>
           <li class="nav-item">
-            <select id="divisa" class="custom-select">
-              <option id="option1" class="option" value="1">Peso</option>
-              <option id="option2" class="option" value="2">Dolar</option>
-            </select>
-            <button onclick="cambioMoneda()" class="btn btn-primary">Cambiar</button>
+             <select onchange="cambioMoneda()" name="divisa" id="divisa" class="form-select">
+               <option id="option1" class="option" value="1">Peso</option>
+               <option id="option2" class="option" value="2">Dolar</option>
+             </select>
           </li>
             
         </ul> 
@@ -125,63 +124,58 @@
     </div>
   </div>
   <div class="container">
-    <div class="encabezado">
-      <h1>Bandanas</h1>
-    <br>
-    <h3>¡¡¡Ofrecemos bandanas de muchos tipos!!!</h3>
-    </div>
+  <div class="encabezado">
+    <h1>Bandanas</h1>
+  <br>
+  <h3>¡¡¡Ofrecemos bandanas de muchos tipos!!!</h3>
   </div>
-  <div class="container">
-    <div class="row">
-      <div class="col">
-        <div class="contenedor">
-          <div class="contenedor-items">
-            <div class="item">
-              <span id="titulo" class="titulo-item">Bandana Escocesa</span>
-              <img src="//cdn.shopify.com/s/files/1/1741/2603/products/bandanaescocesa_300x.jpg?v=1610573718" alt="" class="img-item">
-              <span id="precio" class="precio-item">$15.000</span>
-              <span id="precioDolar" class="precio-item"></span>
-              <button onclick = "crear()" class="boton-item">Agregar al carrito</button>
-            </div>
+  
+  <div class="row">
+    <div class="col">
+      <div class="contenedor">
+        <div class="contenedor-items">
+          <div class="item">
+            <span class="titulo-item">Bandana Escocesa</span>
+            <img src="//cdn.shopify.com/s/files/1/1741/2603/products/bandanaescocesa_300x.jpg?v=1610573718" alt="" class="img-item">
+            <span data-clp = "15000" class="precio-item">15000</span>
+            <button class="boton-item">Agregar al carrito</button>
           </div>
         </div>
       </div>
-      <div class="col">
-        <div class="contenedor">
-          <div class="contenedor-items">
-            <div class="item">
-              <span class="titulo-item">Bandana de Palomitas</span>
-              <img src="//cdn.shopify.com/s/files/1/1741/2603/products/Popcorn-Bandana_700x700_9f916bf2-dc2d-43c3-b123-67478d606343_300x.jpg?v=1616697358" alt="" class="img-item">
-              <span class="precio-item">$30.000</span>
-              <button class="boton-item">Agregar al carrito</button>
-            </div>
+    </div>
+    <div class="col">
+      <div class="contenedor">
+        <div class="contenedor-items">
+          <div class="item">
+            <span class="titulo-item">Bandana de palomitas</span>
+            <img src="//cdn.shopify.com/s/files/1/1741/2603/products/Popcorn-Bandana_700x700_9f916bf2-dc2d-43c3-b123-67478d606343_300x.jpg?v=1616697358" alt="" class="img-item">
+            <span data-clp = "30000" class="precio-item">30000</span>
+            <button class="boton-item">Agregar al carrito</button>
           </div>
         </div>
       </div>
-      <div class="col">
-        <div class="contenedor">
-          <div class="contenedor-items">
-            <div class="item">
-              <span class="titulo-item">Bandana Deep Sea</span>
-              <img src="//cdn.shopify.com/s/files/1/1741/2603/products/acc9b88d-994b-4434-835d-4cb19c4a0888_300x.png?v=1633663177" alt="" class="img-item">
-              <span class="precio-item">$20.000</span>
-              <button class="boton-item">Agregar al carrito</button>
-            </div>
+    </div>
+    <div class="col">
+      <div class="contenedor">
+        <div class="contenedor-items">
+          <div class="item">
+            <span class="titulo-item">Bandana Deep Sea</span>
+            <img src="//cdn.shopify.com/s/files/1/1741/2603/products/acc9b88d-994b-4434-835d-4cb19c4a0888_300x.png?v=1633663177" alt="" class="img-item">
+            <span data-clp = "20000" class="precio-item">20000</span>
+            <button class="boton-item">Agregar al carrito</button>
           </div>
         </div>
       </div>
     </div>
   </div>
+</div>
     
     
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.min.js" integrity="sha384-heAjqF+bCxXpCWLa6Zhcp4fu20XoNIA98ecBC1YkdXhszjoejr5y9Q77hIrv8R9i" crossorigin="anonymous"></script>
-    <script src="JS/funciones_carrito.js"></script>
-    <script src="JS/funciones-estetica.js"></script>
-    <script src="JS/jquery-3.6.4.min.js"></script>
-    <script src="JS/jquery.validate.min.js"></script>
-    <script src="JS/api.js"></script>
-    <script src="JS/jquery.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.min.js" integrity="sha384-heAjqF+bCxXpCWLa6Zhcp4fu20XoNIA98ecBC1YkdXhszjoejr5y9Q77hIrv8R9i" crossorigin="anonymous"></script>
+  <script src="JS/funciones-estetica.js"></script>
+  <script src="JS/funciones_carrito.js"></script>
+  <script src="JS/api.js"></script>
 </body>
 <footer class="footer">
   <div class="left-footer">
@@ -205,7 +199,6 @@
             <li><a href="">Higiene</a></li>
             <li><a href="">Entretención</a></li>
             <li><a href="">Accesorios y vestuarios</a></li>
-            <li><a href="">Platos y bebederos</a></li>
           </ul>
         </div>
       </div>
@@ -224,21 +217,20 @@
 
       <div class="col-lg-3 offset-lg-1 col-md-6 col-sm-6">
       <div class="footer-widget">
-          <h6>NewsLetter</h6>
+          <h6>¿Eres parte de la familia Kuma!?</h6>
           <div class="footer-newsletter">
             <p>Se el primero en saber sobre nuevos productos, ofertas y promociones!</p>
             <form action="#">
               <input type="text" placeholder="Ingrese su mail">
-              <button type="submit"><span><i class="fa fa-envelope" arial-hidden="true"></i></span></button>
+              <a class="button" href="registro.html"><span><i class="fa fa-envelope" arial-hidden="true"></i></span></a>
+              <p class="acominicio">¿Ya eres parte de la familia Kuma!? <a class="iniciosesion" href="iniciosesion.html">Inicia sesión</a></p>
+              <p class="agregar">¡Agrega tus productos! -<a class="iniciosesion" href="agregar_producto.html"> Agregar</a></p>
+              <p class="eliminar">¡Elimina tus productos! -<a class="iniciosesion" href="eliminar_produto.html"> Eliminar<a></p>
             </form>
           </div>
 
         </div>
       </div>
-
-
-
-
     </div>
 
     <div class="row">
